@@ -127,13 +127,13 @@ a:hover {
 img {
   width: 100%;
   display: block;
-  border-radius: 10px; /* Added border-radius for images */
+  border-radius: 10px; 
 }
 
 .icon1 {
     width: 32px;
-    height: 32px; /* Ensures a square aspect ratio */
-    object-fit: contain; /* Prevents distortion */
+    height: 32px; 
+    object-fit: contain; 
     display: inline-block;
 }
 
@@ -182,26 +182,39 @@ nav {
 .nav-links a {
   font-size: 15px;
   gap: 4rem;
-  color: white; /* Change the color of the navigation links */
+  color: white; 
+}
+
+.nav-links a {
+  font-size: 15px;
+  gap: 4rem;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2); /* light transparent background */
+  color: #000; /* change text color on hover */
+  text-decoration: none;
+  transform: scale(1.05); /* subtle zoom effect */
 }
+
 
 /* Logo Styles */
 .nav-container {
-  display:grid; /* Use Flexbox for layout */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  position: relative; /* Allow positioning for other elements */
-  height: 100%; /* Ensure it takes full height */
+  display:grid; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  height: 100%; 
 }
 
 .nav-container img {
-  height: 6rem; /* Adjust the height of the logo as needed */
+  height: 6rem; 
   width: auto;
-  margin: auto; /* Center the logo */
+  margin: auto; 
 }
 
 .nav-links {
@@ -216,23 +229,23 @@ nav {
 }
 
 .header-container .container {
-  text-align: center; /* Center align header content */
+  text-align: center; 
 }
 
 .header-container {
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   max-width: 820px;
   gap: 20px;
-  justify-content: center; /* Center align grid items */
+  justify-content: center; 
   padding-bottom: 100px;
 }
 
 .header-container img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px; /* Added border-radius for images */
+  border-radius: 10px; 
 }
 
 .header-right {
@@ -263,7 +276,7 @@ nav {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin: 1rem; /* Adjusted margin top */
+  margin: 1rem; 
 }
 
 /* About Section Styles */
@@ -287,7 +300,7 @@ nav {
 }
 
 .about-left img {
-  border-radius: 10px; /* Added border-radius for images */
+  border-radius: 10px;
 }
 
 .basic-edu {
@@ -329,14 +342,14 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
-  justify-content: center; /* Center align grid items */
+  justify-content: center; 
 }
 
 .experience-box {
   border: 1px solid var(--color-dark-variant);
   border-radius: 30px;
   padding: 24px;
-  text-align: center; /* Center align content */
+  text-align: center; 
 }
 
 .experience {
@@ -350,15 +363,14 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: center; /* Center align content */
-}
+  justify-content: center; }
 
 /* Projects Section Styles */
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 30px;
-  margin-top: 4rem; /* Adjusted margin top */
+  margin-top: 4rem; 
   padding-bottom: 100px;
 }
 
@@ -426,8 +438,7 @@ nav {
 
 /* Footer Section Styles */
 footer {
-  margin-top: 4rem; /* Adjusted margin top */
-  padding: 30px;
+  margin-top: 4rem; 
   text-align: center;
 }
 
@@ -459,7 +470,7 @@ nav, .header {
 
 /* Contact Section */
 #Contact {
-  background: linear-gradient(135deg, #ffd3a5, #fd6585); /* Apply the gradient background */
+  background: linear-gradient(135deg, #ffd3a5, #fd6585); 
   padding: 50px 20px;
   text-align: center;
 }
@@ -489,10 +500,10 @@ footer {
 
   /* Navbar */
   .nav-links {
-      display: none; /* Hide the menu by default */
+      display: none; 
   }
   .menu-icon {
-      display: block; /* Show the menu icon */
+      display: block; 
   }
 }
 
@@ -558,7 +569,7 @@ footer {
 
   /* Navbar */
   .nav-links {
-      display: none; /* Ensure it's hidden by default */
+      display: none; 
       flex-direction: column;
       position: absolute;
       top: 60px;
