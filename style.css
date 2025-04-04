@@ -131,8 +131,10 @@ img {
 }
 
 .icon1 {
-  width: 32px;
-  height: max-content;
+    width: 32px;
+    height: 32px; /* Ensures a square aspect ratio */
+    object-fit: contain; /* Prevents distortion */
+    display: inline-block;
 }
 
 /* Container Styles */
@@ -189,7 +191,7 @@ nav {
 
 /* Logo Styles */
 .nav-container {
-  display: flex; /* Use Flexbox for layout */
+  display:grid; /* Use Flexbox for layout */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   position: relative; /* Allow positioning for other elements */
@@ -266,17 +268,22 @@ nav {
 
 /* About Section Styles */
 .about-container {
-  display: grid;
-  grid-template-columns: 38% auto;
-  gap: 4rem;
+  display: flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 4rem; /* Adjusted margin top */
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 4rem;
   padding-bottom: 100px;
 }
+
 
 .about-left {
   border-radius: 20px;
   overflow: hidden;
+  margin: 0 auto
 }
 
 .about-left img {
